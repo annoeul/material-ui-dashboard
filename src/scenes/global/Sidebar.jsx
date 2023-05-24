@@ -74,7 +74,7 @@ const Sidebar = () => {
             {!isCollapsed && (
               <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINS
+                  관리
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -112,7 +112,7 @@ const Sidebar = () => {
             <Typography variant="h6" color={colors.grey[300]} sx={{ m: "15px 0 15px 20px" }}>
               Data
             </Typography>
-            <Item
+            {/* <Item
               title="Manage Team"
               to="/team"
               icon={<PeopleOutlinedIcon />}
@@ -125,9 +125,9 @@ const Sidebar = () => {
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             <Item
-              title="Invoices Balances"
+              title="메뉴 관리"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
@@ -138,13 +138,13 @@ const Sidebar = () => {
             </Typography>
 
             <Item
-              title="Profile Form"
+              title="정보 수정"
               to="/form"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/* <Item
               title="Calendar"
               to="/calendar"
               icon={<CalendarTodayOutlinedIcon />}
@@ -157,32 +157,32 @@ const Sidebar = () => {
               icon={<HelpOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             <Typography variant="h6" color={colors.grey[300]} sx={{ m: "15px 0 15px 20px" }}>
               Chart
             </Typography>
 
-            <Item
+            {/* <Item
               title="Pie Chart "
               to="/pie"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             <Item
-              title="Line Chart"
+              title="판매량"
               to="/line"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/* <Item
               title="Geography Chart"
               to="/geography"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
           </Box>
         </Menu>
       </ProSidebar>
